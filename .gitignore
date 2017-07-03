@@ -1,0 +1,11 @@
+.springBeans
+.gradle
+.project
+.classpath
+.settings
+
+
+
+bin
+build
+classes
