@@ -1,1 +1,27 @@
-Hello World
+<!DOCTYPE html>
+<html >
+
+<head th:replace="fragments/header :: header">
+
+
+</head>
+
+
+<body>
+
+  
+    <div class="container" style="margin-top:50px;">
+     <div style="margin-bottom:20px;">All schools
+     </div>
+     <a th:each="school : ${allSchool}"
+       class="atext ucase" th:text="${school.name}" th:href="${school.name}" >A Smoke Test</a>
+    </div>
+	<div th:replace="fragments/footer :: footer">Footer</div>
+
+
+</body>
+
+
+
+
+</html>
